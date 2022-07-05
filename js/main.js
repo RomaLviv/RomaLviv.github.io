@@ -1,36 +1,31 @@
-
 window.onload = function() {
+
+// FAQ SECTION
 const items = document.querySelectorAll(".accordion button");
-
 items.forEach((item) => item.addEventListener("click", toggleAccordion));
-
 function toggleAccordion() {
   const itemToggle = this.getAttribute("aria-expanded");
-
   for (let item of items) {
     item.setAttribute("aria-expanded", false);
   };
-
   if (itemToggle === "false") {
     this.setAttribute("aria-expanded", true);
   };
 };
+
+// SLIDER OPTIONS
 const swiper = new Swiper(".mySwiper", {
     loop: true,
-    autoplay: {
-      delay: 3000,
-    },
-// Responsive breakpoints
+    // autoplay: {
+    //   delay: 3000,
+    // },
 breakpoints: {
-// when window width is >= 480px
 480: {
   slidesPerView: 1,
 },
-// when window width is >= 769px
 769: {
   slidesPerView: 1,
 },
-// when window width is >= 960px
 960: {
   slidesPerView: 2,
 },
@@ -40,6 +35,37 @@ breakpoints: {
       prevEl: ".swiper-button-prev",
     },
   });
+
+
+// MENU SMOOTH SCROLL  
+$('.header a[href^="#"]').click(function() {
+    let target = $(this).attr('href');
+    $('html, body').animate({
+        scrollTop: $(target).offset().top
+    },500);
+    $('.header a[href^="#"]').parent().removeClass('active');
+    $(this).parent().addClass('active');
+    $('.menu__mobile .menu').toggle(500);
+    $('.menu__burger').toggleClass('close');
+    return false;
+});
+// BUTTON SMOOTH SCROLL 
+  $('.green_button a[href^="#"]').click(function() {
+    let target = $(this).attr('href');
+    $('html, body').animate({
+        scrollTop: $(target).offset().top
+    },500);
+    return false;
+});
+
+// MOBILE MENU
+$('.menu__burger').click(function() {
+    $('.menu__mobile .menu').toggle();
+    $(this).toggleClass('close');
+});
+
+
+
 
 };
 

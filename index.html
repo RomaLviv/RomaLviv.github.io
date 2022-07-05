@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomeWork</title>
     <link rel="icon" type="image/x-icon" href="/img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/fonts.css">
+    <script src="/js/jquery-3.5.1.min.js"></script>
     <script src="/js/swiper-bundle.min.js"></script>
 </head>
 <body>
@@ -27,18 +29,19 @@
                         <li class="menu-item order"><a href="#order">Заказать</a></li>
                     </ul>
                 </nav>
-                <!-- <nav class="menu__mobile">
+                <nav class="menu__mobile">
                     <div class="menu__inner">
+                        <a href="" class="mobile_logo"><img src="/img/logo.png" alt=""></a>
                         <div class="menu__burger"><span>toggle menu</span></div>
                     </div>
                         <ul class="menu">
                             <li class="menu-item active"><a href="#services">Услуги</a></li>
-                            <li class="menu-item"><a href="#about">Портфолио</a></li>
-                            <li class="menu-item"><a href="#team">Этапы</a></li>
-                            <li class="menu-item"><a href="#provide">Дизайнеры</a></li>
+                            <li class="menu-item"><a href="#portfolio">Портфолио</a></li>
+                            <li class="menu-item"><a href="#stages">Этапы</a></li>
+                            <li class="menu-item"><a href="#designers">Дизайнеры</a></li>
                             <li class="menu-item"><a href="#order">Заказать</a></li>
                         </ul>
-                </nav> -->
+                </nav>
             </div>
         </div>
     </header>
@@ -53,14 +56,14 @@
                         с командой <span class="sp_bold">Virtual Designers</span>
                     </p>
                     <button class="green_button">
-                        <a href="" class="btnUrl">Заказать</a>
+                        <a href="#order" class="btnUrl">Заказать</a>
                     </button>
             </div>
         </div>
     </div>
 
     <!-- SERVICES -->
-    <div class="services">
+    <div class="services" id="services">
         <div class="services_container">
             <h2 class="services_title">
                 Что входит в услугу по созданию дизайна интернет-магазина?
@@ -71,7 +74,7 @@
                   <div class="accordion-item">
                     <button aria-expanded="false">
                       <span class="title-icon" aria-hidden="true"></span>
-                      <span class="accordion-title" aria-hidden="true">Дизайн портала</span>
+                      <p class="accordion-title" aria-hidden="true">Дизайн портала</p>
                       <span class="icon" aria-hidden="true"></span>
                     </button>
                     <div class="content">
@@ -85,7 +88,7 @@
                   <div class="accordion-item">
                     <button aria-expanded="false">
                       <span class="title-icon" aria-hidden="true"></span>
-                      <span class="accordion-title">Дизайн адаптивной мобильной версии</span>
+                      <p class="accordion-title">Дизайн адаптивной мобильной версии</p>
                       <span class="icon" aria-hidden="true"></span>
                     </button>
                     <div class="content">
@@ -101,7 +104,7 @@
                   <div class="accordion-item">
                     <button aria-expanded="false">
                       <span class="title-icon" aria-hidden="true"></span>
-                      <span class="accordion-title">Дизайн десктопной версии</span>
+                      <p class="accordion-title">Дизайн десктопной версии</p>
                       <span class="icon" aria-hidden="true"></span>
                     </button>
                     <div class="content">
@@ -115,7 +118,7 @@
                   <div class="accordion-item">
                     <button aria-expanded="false">
                       <span class="title-icon" aria-hidden="true"></span>
-                      <span class="accordion-title">Пользовательский интерфейс</span>
+                      <p class="accordion-title">Пользовательский интерфейс</p>
                       <span class="icon" aria-hidden="true"></span>
                     </button>
                     <div class="content">
@@ -129,7 +132,7 @@
                   <div class="accordion-item">
                     <button aria-expanded="false">
                       <span class="title-icon" aria-hidden="true"></span>
-                      <span class="accordion-title">Микро UX</span>
+                      <p class="accordion-title">Микро UX</p>
                       <span class="icon" aria-hidden="true"></span>
                     </button>
                     <div class="content">
@@ -146,7 +149,7 @@
     </div>
 
     <!-- STAGES -->
-    <div class="stages">
+    <div class="stages" id="stages">
         <div class="stages_container">
             <h2 class="stages_title">
                 Этапы разработки интернет-магазина
@@ -208,7 +211,7 @@
     </div>
 
     <!-- DESIGN -->
-    <div class="design">
+    <div class="design" id="portfolio">
         <div class="design_container">
             <h2 class="design_title">
                 Примеры онлайн-магазинов
@@ -277,13 +280,13 @@
     
 <!-- INFORMATION -->
 
-    <div class="info">
+    <div class="info" id="designers">
         <div class="info_container">
             <div class="info-title">
                 <h2 class="title">Необходимо больше информации?</h2>
                     <p class="info-text">Если Вы владелец онлайн-магазина или только начинаете свой путь в электронной коммерции и вам нужен уникальный дизайн онлайн магазина для стартапа, обратитесь к нашему веб дизайнеру. За выгодную цену и короткий период времени, он поможет визуализировать ваш веб проект.</p>
                     <button class="green_button">
-                        <a href="" class="btnUrl">Оставить заявку</a>
+                        <a href="#order" class="btnUrl">Оставить заявку</a>
                     </button>
             </div>
             <div class="info_img">
@@ -291,7 +294,7 @@
             </div>
         </div>
     </div>
-    <div class="contacts">
+    <div class="contacts" id="order">
         <div class="contacts_container">
             <div class="contacts_info">
                 <h2 class="contacts_title">
@@ -300,15 +303,45 @@
                     <p class="contact-text">Расскажите о своих бизнес-целях и мы поможем вам в их достижении</p>
                     
                         <form action="" method="" class="contact_form">
-                            <input type="text" name="name" placeholder="Имя" required>
+                            <input type="text" name="name" placeholder="Имя*" minlength="3" required>
                             <input type="text" name="viber" placeholder="Telegram/Viber">
-                            <input type="email" name="email" placeholder="Email" required>
+                            <input type="email" name="email" placeholder="Email*" required>
+                            <span class="form__error">Это поле должно содержать E-Mail в формате example@site.com</span>
                             <input class="green_button send" type="submit" value="Отправить"></input>
                         </form>
             </div>
         </div>
     </div>
 
+    <div class="footer">
+        <div class="footer_container">
+            <div class="footer_item">
+                <a href=""><img src="/img/logo.png" alt=""></a>
+                <div class="social">
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://web.telegram.org" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://www.viber.com" target="_blank"><i class="fa-brands fa-viber"></i></a>
+                    <a href="https://www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer_item">
+                <div class="phones">
+                    <i class="fa-brands fa-viber"><a href="tel:+79805585949">Валерия: +79805585949</a></i>
+                    <i class="fa-brands fa-viber"><a href="tel:+79805585949">Анна: +79805585949</a></i>
+                    <i class="fa-brands fa-viber"><a href="tel:+79805585949">Валерия: +79805585949</a></i>
+                </div>
+            </div>
+            <div class="footer_item">
+                <div class="mail">
+                    <a href="mailto:hr@dv-s.com">hr@dv-s.com</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Developers 2018-2021 © All rights reserved</p>
+        </div>
+    </div>
 
 
 
