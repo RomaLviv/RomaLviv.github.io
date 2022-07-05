@@ -319,12 +319,12 @@ margin: auto;
  
   .stages{
     width: 100%;
+    margin: 0 auto;
     height: 908px;
-    margin: auto;
     background-color: #fff;
-    /* background-image: url(/img/BG.png);
+    background-image: url(/img/BG-stages.png);
     background-repeat: no-repeat;
-    background-size: contain; */
+    background-size: contain;
 }
 /* .services_container{
     width: 1166px;
@@ -341,6 +341,51 @@ margin: auto;
     padding-top: 100px;
     padding-bottom: 60px;
 }
+.stages_item_title{
+    font-family: 'Montserrat-bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    color: #000000;
+}
 
+.stages_item_text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+}
+
+
+.stages_item{
+    width: 672px;
+    height: 389px;
+    border: 3px solid #67AEFC;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px;
+    margin: auto;
+}
+.stages_info{
+    width: 300px;
+}
+.swiper-container{
+    width: 100%;
+}
+
+.stage_slider{
+  display: flex;
+  justify-content: space-around;
+  width: 1400px;
+  margin: auto;
+}
+.test{
+  width: 100%;
+}
 
 
