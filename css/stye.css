@@ -10,13 +10,13 @@ body {
     margin: 0 auto;
 }
 .header{
-    position: absolute;
+    /* position: absolute; */
     left: 0;
     right: 0;
     height: 95px;
     margin: auto;
     background-color: #67AEFC;
-    z-index: 1;
+    /* z-index: 1; */
 }
 .header_container {
     display: flex;
@@ -29,7 +29,7 @@ body {
     width: 245px;
     height: 59px;
     top: 4px;
-    margin: 18px 0 17px 48px;
+    margin: 18px 0 17px 0;
 }
 .menu {
     list-style: none;
@@ -47,6 +47,9 @@ body {
     font-size: 16px;
     line-height: 20px;
     text-transform: capitalize;
+}
+.menu li:last-child{
+    margin: 0;
 }
 .menu li a{
     color: #FFF;
@@ -77,7 +80,267 @@ body {
 }
 
 
+.welcome{
+    width: 100%;
+    height: 766px;
+    background-image: url(/img/1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+.welcome_container{
+    width: 1200px;
+    height: 613px;
+    margin: auto;
+}
 
+.welcome-title{
+    width: 432px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+}
+.sp_bold{
+    font-weight: bold;
+}
+.title{
+    margin: 0;
+    font-family: 'Montserrat-bold';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 62px;
+    color: #484848;
+    padding-top: 171px;
+    width: 538px;
+}
+
+
+.green_button{
+    width: 270px;
+    height: 60px;
+    margin-top: 38px;;
+    background: #75E169;
+    border-radius: 5px;
+    border-color: #75e16900;
+}
+.green_button:hover{
+    border: 2px solid #67AEFC;
+}
+.green_button:active{
+    background: #67AEFC;
+}
+.btnUrl{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+.services{
+    width: 100%;
+    min-height: 703px;
+    margin: auto;
+    background-color: #DAECFF;
+    background-image: url(/img/BG.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.services_title{
+    font-family: 'Montserrat-bold';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: #111111;
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+.services_container{
+    width: 1166px;
+margin: auto;
+}
+
+/* //FAQ */
+
+  
+  .accordion {
+    margin-top: 20px;
+    
+  }
+  
+  .accordion .accordion-item {
+
+    background: #FFFFFF;
+    border-radius: 15px;
+    margin: 5px;
+    
+  }
+  .accordion-title{
+    margin-left: 25px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #111111;
+  }
+  .accordion .accordion-item button[aria-expanded="true"] .accordion-title {
+    font-family: 'Montserrat-bold';
+  }
+
+  
+  .accordion .accordion-item button[aria-expanded="true"] {
+    border-bottom: 1px solid var(--blue);
+  }
+  
+  .accordion button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: var(--text);
+    font-size: 1.1rem;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    background: none;
+  }
+  
+  .accordion button:hover,
+  .accordion button:focus {
+    cursor: pointer;
+    color: var(--blue);
+  }
+  
+  .accordion button .accordion-title {
+    padding: 1em 1.5em 1em 1.5em;
+  }
+  .accordion button .title-icon{
+    position: absolute;
+    background: #75E169;
+    border-radius: 45px;
+    width: 24px;
+    height: 24px;
+    top: 21px;
+    left: 15px;
+  }
+  .accordion .accordion-item button[aria-expanded="true"] .title-icon {
+    background: #67AEFC;
+  }
+
+  .accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    width: 22px;
+    height: 22px;
+  }
+  
+  .accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 12px;
+    left: 4px;
+    width: 14px;
+    height: 2px;
+    transform: rotate(-45deg);
+    background: currentColor;
+    transition: all 200ms linear;
+  }
+  
+  .accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 6px;
+    left: 1px;
+    width: 2px;
+    height: 14px;
+    transform: rotate(135deg);
+    background: currentColor;
+    transition: all 200ms linear;
+  }
+  
+  .accordion .accordion-item button[aria-expanded="true"] {
+    color: var(--blue);
+  }
+  
+  .accordion .accordion-item button[aria-expanded="true"] .icon::after {
+    width: 2px;
+    transform: rotate(45deg);
+    transition: all 200ms linear;
+  }
+  .accordion .accordion-item button[aria-expanded="true"] .icon::before {
+    width: 2px;
+    transform: rotate(45deg);
+    width: 14px;
+    transition: all 200ms linear;
+  }
+  
+  .accordion .accordion-item button[aria-expanded="true"] + .content {
+    opacity: 1;
+    max-height: 20em;
+    transition: all 200ms linear;
+  }
+  
+  .content {
+    opacity: 0;
+    max-height: 0;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    padding-right: 25px;
+  }
+  
+  .content p {
+    margin: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #000000;
+    border-left: 1px solid black;
+    margin-left: 25px;
+    padding-left: 25px;
+  }
+ 
+  .stages{
+    width: 100%;
+    height: 908px;
+    margin: auto;
+    background-color: #fff;
+    /* background-image: url(/img/BG.png);
+    background-repeat: no-repeat;
+    background-size: contain; */
+}
+/* .services_container{
+    width: 1166px;
+    margin: auto;
+} */
+.stages_title{
+    font-family: 'Montserrat-bold';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: #111111;
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
 
 
 
