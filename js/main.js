@@ -16,9 +16,9 @@ function toggleAccordion() {
 // SLIDER OPTIONS
 const swiper = new Swiper(".mySwiper", {
     loop: true,
-    // autoplay: {
-    //   delay: 3000,
-    // },
+    autoplay: {
+      delay: 5000,
+    },
 breakpoints: {
 480: {
   slidesPerView: 1,
@@ -60,10 +60,23 @@ $('.header a[href^="#"]').click(function() {
 
 // MOBILE MENU
 $('.menu__burger').click(function() {
-    $('.menu__mobile .menu').toggle();
+    $('.menu__mobile .menu').fadeToggle();
     $(this).toggleClass('close');
 });
 
+// TOP SCROLL
+let btn = $('#top_button');
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
 
 
 

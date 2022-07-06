@@ -7,17 +7,14 @@ body {
 }
 .container {
     width: 100%;
-    /* width: 1200px; */
     margin: 0 auto;
 }
 .header{
-    /* position: absolute; */
     left: 0;
     right: 0;
     height: 95px;
     margin: auto;
     background-color: #67AEFC;
-    /* z-index: 1; */
 }
 .header_container {
     display: flex;
@@ -25,7 +22,6 @@ body {
     width: 1200px;
     margin: auto;
 }
-
 .main_logo {
     width: 245px;
     height: 59px;
@@ -83,21 +79,18 @@ body {
   border-bottom: 3px solid #fff;
   padding-bottom: 2px;
 }
-
 .welcome{
     width: 100%;
     height: 766px;
     background-image: url(/img/1.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    
 }
 .welcome_container{
     width: 1200px;
     height: 613px;
     margin: auto;
 }
-
 .welcome-title{
     width: 432px;
     font-family: 'Montserrat';
@@ -105,7 +98,6 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-
 }
 .sp_bold{
     font-weight: bold;
@@ -121,8 +113,6 @@ body {
     padding-top: 171px;
     width: 538px;
 }
-
-
 .green_button{
     width: 270px;
     height: 60px;
@@ -147,8 +137,6 @@ body {
     color: #FFFFFF;
     text-decoration: none;
 }
-
-
 .services{
     width: 100%;
     min-height: 703px;
@@ -177,19 +165,13 @@ margin: auto;
 }
 
 /* //FAQ */
-
-  
   .accordion {
     margin-top: 20px;
-    
   }
-  
   .accordion .accordion-item {
-
     background: #FFFFFF;
     border-radius: 15px;
     margin: 5px;
-    
   }
   .accordion-title{
     margin: 0 0 0 25px;
@@ -296,9 +278,10 @@ margin: auto;
   
   .accordion .accordion-item button[aria-expanded="true"] + .content {
     opacity: 1;
-    max-height: 20em;
+    max-height: 60em;
     transition: all 200ms linear;
   }
+ 
   
   .content {
     opacity: 0;
@@ -543,7 +526,9 @@ color: #FFFFFF;
   justify-content: space-between;
   align-items: center;
 }
-
+.order_img{
+  display: none;
+}
 .info-title .title{
   width: auto;
   font-family: 'Montserrat-bold';
@@ -577,7 +562,9 @@ color: #FFFFFF;
 .contacts_container{
   width: 470px;
   margin: auto;
-
+}
+.contact_img{
+  display: none;
 }
 .contacts_info{
   padding-top: 100px;
@@ -718,6 +705,7 @@ input:invalid:not(:placeholder-shown) + .form__error {
 .menu__mobile {
   display: none;
 }
+
 
 @media screen and (max-width: 769px){
 
@@ -886,6 +874,9 @@ line-height: 34px;
   left: 26%;
   top: 94%;
 }
+.design{
+  height: auto;
+}
 .design_title{
   padding: 20px 0 10px 0;
   margin: 0;
@@ -902,7 +893,137 @@ line-height: 34px;
   width: 335px;
   height: 260px;
 }
+.info_container{
+  width: 100%;
+  display: block;
+  padding: 0 20px 0 20px;
 
+}
+.order_img{
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+.send{
+  width: 100%;
+}
+.info_img{
+  display: none;
+}
+.info-title .title{
+  padding-top: 20px;
+  font-size: 23px;
+  line-height: 34px;
+  text-align: center;
+}
+.info-text{
+  text-align: left;
+  font-size: 17px;
+  line-height: 30px;
+}
+.info_container .green_button{
+  margin-top: 18px;
+}
+.contacts{
+  background-color: #DAECFF;
+  background-image: none;
+  height: 820px;
+}
+.contacts_container{
+  width: 100%;
+  padding: 0 20px 0 20px;
+}
+.contacts_title{
+  font-size: 23px;
+  line-height: 34px;
+}
+.contacts_info{
+  padding-top: 20px;
+}
+.contact-text{
+  font-size: 17px;
+  line-height: 30px;
+}
+.contact_img{
+  display: block;
+  width: 100%;
+  margin: auto;
+  padding: 25px;
+}
 
+.footer{
+  height: auto;
+}
+.footer_container{
+ width: 100%;
+ padding: 40px 25px 0 25px; 
+ flex-wrap: wrap;
+ justify-content:center;
+}
+.social{
+  width: 90%;
+  margin: auto;
+  padding-bottom: 20px;
+}
+.social i{
+  font-size: 30px;
+}
+.footer_item .phones a{
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 15px;
+  vertical-align: middle;
+}
+.phones i{
+  font-size: 30px;
+  padding-left: 28px;
+}
+.mail{
+  text-align: center;
+  font-size: 16px;
+  line-height: 22px;
+}
 
+.copyright{
+  padding: 30px 50px 50px 50px;
+  font-size: 14px;
+  line-height: 20px;
+
+}
+
+}
+
+/* TOP SCROLL */
+#top_button {
+  display: inline-block;
+  background-color: rgb(185, 140, 189);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#top_button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#top_button:hover {
+  cursor: pointer;
+  background-color: #75E169;
+}
+#top_button.show {
+  opacity: 1;
+  visibility: visible;
 }
