@@ -1,5 +1,4 @@
 window.onload = function() {
-
 // FAQ SECTION
 const items = document.querySelectorAll(".accordion button");
 items.forEach((item) => item.addEventListener("click", toggleAccordion));
@@ -12,31 +11,28 @@ function toggleAccordion() {
     this.setAttribute("aria-expanded", true);
   };
 };
-
 // SLIDER OPTIONS
 const swiper = new Swiper(".mySwiper", {
     loop: true,
     autoplay: {
       delay: 5000,
     },
-breakpoints: {
-480: {
-  slidesPerView: 1,
-},
-769: {
-  slidesPerView: 1,
-},
-960: {
-  slidesPerView: 2,
-},
-},
+    breakpoints: {
+    480: {
+      slidesPerView: 1,
+    },
+    769: {
+      slidesPerView: 1,
+    },
+    960: {
+      slidesPerView: 2,
+    },
+    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
   });
-
-
 // MENU SMOOTH SCROLL  
 $('.header a[href^="#"]').click(function() {
     let target = $(this).attr('href');
@@ -57,7 +53,6 @@ $('.header a[href^="#"]').click(function() {
     },500);
     return false;
 });
-
 // MOBILE MENU
 $('.menu__burger').click(function() {
     $('.menu__mobile .menu').fadeToggle();
@@ -77,9 +72,6 @@ btn.on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop:0}, '300');
 });
-
-
-
 };
 
 
